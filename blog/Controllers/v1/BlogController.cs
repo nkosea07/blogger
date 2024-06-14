@@ -1,12 +1,14 @@
+using Asp.Versioning;
 using blog.Models.DTOs;
 using blog.Repositories;
 using blog.Services.Blogs;
 using Microsoft.AspNetCore.Mvc;
 using Models.Entities;
 
-namespace blog.Controllers
+namespace blog.Controllers.v1
 {
 
+    [ApiVersion("1.0")]
     [ApiController]
     [Route("api/blog")]
     public class BlogController(IBlogService blogService) : ControllerBase
@@ -67,7 +69,7 @@ namespace blog.Controllers
                 var blogPost = await blogService.GetBlogById(id);
                 if (blogPost != null)
                 {
-                    return StatusCode(StatusCodes.Status200OK,await blogService.UpdateBlog(blogPost)) ;
+                    return StatusCode(StatusCodes.Status200OK,await blogService.UpdateBlog(blog)) ;
                 }
 
                 return StatusCode(StatusCodes.Status404NotFound,"Blog post with given ID does not exist");

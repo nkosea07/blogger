@@ -1,12 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "fVKlisRNDRI=",
+  "dgSpecHash": "t16XzHjVpRM=",
   "success": true,
   "projectFilePath": "/Users/nkosinxumalo/Documents/Projects/Blogger/blog/blog.csproj",
   "expectedPackageFiles": [
+    "/Users/nkosinxumalo/.nuget/packages/asp.versioning.abstractions/8.1.0/asp.versioning.abstractions.8.1.0.nupkg.sha512",
+    "/Users/nkosinxumalo/.nuget/packages/asp.versioning.http/8.1.0/asp.versioning.http.8.1.0.nupkg.sha512",
+    "/Users/nkosinxumalo/.nuget/packages/asp.versioning.mvc/8.1.0/asp.versioning.mvc.8.1.0.nupkg.sha512",
+    "/Users/nkosinxumalo/.nuget/packages/asp.versioning.mvc.apiexplorer/8.1.0/asp.versioning.mvc.apiexplorer.8.1.0.nupkg.sha512",
     "/Users/nkosinxumalo/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/nkosinxumalo/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/Users/nkosinxumalo/.nuget/packages/bouncycastle.netcore/1.8.3/bouncycastle.netcore.1.8.3.nupkg.sha512",
+    "/Users/nkosinxumalo/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
+    "/Users/nkosinxumalo/.nuget/packages/fakeiteasy/8.2.0/fakeiteasy.8.2.0.nupkg.sha512",
+    "/Users/nkosinxumalo/.nuget/packages/fluentassertions/7.0.0-alpha.4/fluentassertions.7.0.0-alpha.4.nupkg.sha512",
     "/Users/nkosinxumalo/.nuget/packages/google.protobuf/3.11.4/google.protobuf.3.11.4.nupkg.sha512",
     "/Users/nkosinxumalo/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/nkosinxumalo/.nuget/packages/k4os.compression.lz4/1.1.11/k4os.compression.lz4.1.1.11.nupkg.sha512",
@@ -86,6 +93,7 @@
     "/Users/nkosinxumalo/.nuget/packages/system.console/4.0.0/system.console.4.0.0.nupkg.sha512",
     "/Users/nkosinxumalo/.nuget/packages/system.diagnostics.debug/4.0.11/system.diagnostics.debug.4.0.11.nupkg.sha512",
     "/Users/nkosinxumalo/.nuget/packages/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "/Users/nkosinxumalo/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "/Users/nkosinxumalo/.nuget/packages/system.diagnostics.tools/4.0.1/system.diagnostics.tools.4.0.1.nupkg.sha512",
     "/Users/nkosinxumalo/.nuget/packages/system.diagnostics.tracesource/4.0.0/system.diagnostics.tracesource.4.0.0.nupkg.sha512",
     "/Users/nkosinxumalo/.nuget/packages/system.diagnostics.tracing/4.1.0/system.diagnostics.tracing.4.1.0.nupkg.sha512",
@@ -160,12 +168,5 @@
     "/Users/nkosinxumalo/.nuget/packages/system.xml.xpath/4.0.1/system.xml.xpath.4.0.1.nupkg.sha512",
     "/Users/nkosinxumalo/.nuget/packages/system.xml.xpath.xmldocument/4.0.1/system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
-    }
-  ]
+  "logs": []
 }
