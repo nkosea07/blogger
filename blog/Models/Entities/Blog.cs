@@ -2,9 +2,8 @@ namespace Models.Entities
 {
     public class Blog
     {
+        
         public Guid BlogId { get; set;}
-        public  required string FirstName { get;  set; }
-        public  required string LastName { get; set; }
         public required string BlogTitle { get; set;}
         public required string Description { get; set;}
         public required string PostBody { get; set;}

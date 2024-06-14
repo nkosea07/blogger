@@ -1,9 +1,7 @@
-namespace Models.DTOs
+namespace blog.Models.DTOs
 {
-    public class BlogDTO
+    public class BlogDto
     {
-        public  required string FirstName { get;  set; }
-        public  required string LastName { get; set; }
         public required string BlogTitle { get; set;}
         public required string Description { get; set;}
         public required string PostBody { get; set;}

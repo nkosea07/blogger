@@ -16,8 +16,8 @@ namespace blog.Repositories
         }
         public async Task<Blog> CreateBlog(Blog blog)
         {
-            blog.Published = DateTime.Now;
-            blog.Updated = DateTime.Now;
+            blog.Published = DateTime.UtcNow;
+            blog.Updated = DateTime.UtcNow;
             var createBlogPostResult = await appDbContext.Blog.AddAsync(blog);
             await appDbContext.SaveChangesAsync();
             return createBlogPostResult.Entity;
@@ -58,10 +58,9 @@ namespace blog.Repositories
            { 
             return blogResult; 
            }
-           else
-           {
+
             return null;
-           }
+        
         }
 
         public async Task<IEnumerable<Blog>> GetBlogs()
@@ -74,21 +73,16 @@ namespace blog.Repositories
            var blogResult = await appDbContext.Blog.FirstOrDefaultAsync(e => e.BlogId == blog.BlogId);
            if (blogResult != null)
            {
-            blogResult.FirstName = blog.FirstName;
-            blogResult.LastName = blog.LastName;
             blogResult.BlogTitle = blog.BlogTitle;
             blogResult.Description = blog.Description;
             blogResult.BlogAuthor = blog.BlogAuthor;
             blogResult.ImageUrl = blog.ImageUrl;
-            blogResult.Updated = DateTime.Now;
+            blogResult.Updated = DateTime.UtcNow;
 
             await appDbContext.SaveChangesAsync();
             return blogResult;
            }
-           else
-           {
             return null;
-           }
         }
     }
 }
